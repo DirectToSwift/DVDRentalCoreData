@@ -8,8 +8,9 @@ let ruleModel : RuleModel = [
   // \.platform == .phone => \.debug <= true,
 
   // MARK: - Authentication
-  // uncomment to enable the login panel:
-  //   \.firstTask <= "login",
+  // Uncomment to enable the login panel.
+  // Password: https://www.youtube.com/watch?v=a6iW-8xPw3k
+  // \.firstTask <= "login",
   \.user?.username == "Mike" => \.visibleEntityNames <= [ "Actor", "Film" ],
   \.user?.username == "Mike" && \.object.firstName == "Penelope"
                              => \.isObjectEditable <= false,
