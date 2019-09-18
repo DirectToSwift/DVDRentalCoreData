@@ -6,14 +6,8 @@
 //  Copyright © 2019 ZeeZide GmbH. All rights reserved.
 //
 
-import DirectToSwiftUI
+import struct DirectToSwiftUI.D2SMainView
 import SwiftUI
-import PostgreSQLAdaptor
-
-let adaptor = PostgreSQLAdaptor(database: "dvdrental")
-
-let ruleModel : RuleModel = [
-]
 
 struct ContentView: View {
     var body: some View {

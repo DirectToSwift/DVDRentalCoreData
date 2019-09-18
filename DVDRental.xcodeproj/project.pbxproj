@@ -6,7 +6,34 @@
 	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E839F2B3233284E4005BD5A2 /* DVDRental-AllPlatforms */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E839F2B4233284E4005BD5A2 /* Build configuration list for PBXAggregateTarget "DVDRental-AllPlatforms" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E839F2B8233284EE005BD5A2 /* PBXTargetDependency */,
+				E839F2BA233284EE005BD5A2 /* PBXTargetDependency */,
+				E839F2BC233284EE005BD5A2 /* PBXTargetDependency */,
+				E839F2BE233284EE005BD5A2 /* PBXTargetDependency */,
+				E839F2C0233284EE005BD5A2 /* PBXTargetDependency */,
+			);
+			name = "DVDRental-AllPlatforms";
+			productName = "DVDRental-AllPlatforms";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		E839F2AA23328105005BD5A2 /* RuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A723328105005BD5A2 /* RuleModel.swift */; };
+		E839F2AB23328105005BD5A2 /* RuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A723328105005BD5A2 /* RuleModel.swift */; };
+		E839F2AC23328105005BD5A2 /* RuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A723328105005BD5A2 /* RuleModel.swift */; };
+		E839F2AD23328105005BD5A2 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A823328105005BD5A2 /* CustomViews.swift */; };
+		E839F2AE23328105005BD5A2 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A823328105005BD5A2 /* CustomViews.swift */; };
+		E839F2AF23328105005BD5A2 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A823328105005BD5A2 /* CustomViews.swift */; };
+		E839F2B023328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
+		E839F2B123328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
+		E839F2B223328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
 		E8A2C93F23327130009F2E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C93E23327130009F2E71 /* AppDelegate.swift */; };
 		E8A2C94123327130009F2E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94023327130009F2E71 /* SceneDelegate.swift */; };
 		E8A2C94323327130009F2E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94223327130009F2E71 /* ContentView.swift */; };
@@ -38,6 +65,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E839F2B7233284EE005BD5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A2C93A23327130009F2E71;
+			remoteInfo = DVDRental;
+		};
+		E839F2B9233284EE005BD5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A2C95923327814009F2E71;
+			remoteInfo = DVDRentalWatch;
+		};
+		E839F2BB233284EE005BD5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A2C95C23327814009F2E71;
+			remoteInfo = "DVDRentalWatch WatchKit App";
+		};
+		E839F2BD233284EE005BD5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A2C96B23327815009F2E71;
+			remoteInfo = "DVDRentalWatch WatchKit Extension";
+		};
+		E839F2BF233284EE005BD5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A2C99923327A9D009F2E71;
+			remoteInfo = MacRentals;
+		};
 		E8A2C95F23327814009F2E71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8A2C93323327130009F2E71 /* Project object */;
@@ -80,6 +142,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E839F2A723328105005BD5A2 /* RuleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleModel.swift; sourceTree = "<group>"; };
+		E839F2A823328105005BD5A2 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		E839F2A923328105005BD5A2 /* DatabaseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfig.swift; sourceTree = "<group>"; };
 		E8A2C93B23327130009F2E71 /* DVDRental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDRental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A2C93E23327130009F2E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A2C94023327130009F2E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,13 +209,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E839F2A623328105005BD5A2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E839F2A723328105005BD5A2 /* RuleModel.swift */,
+				E839F2A823328105005BD5A2 /* CustomViews.swift */,
+				E839F2A923328105005BD5A2 /* DatabaseConfig.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		E8A2C93223327130009F2E71 = {
 			isa = PBXGroup;
 			children = (
+				E839F2A623328105005BD5A2 /* Shared */,
 				E8A2C93D23327130009F2E71 /* DVDRental */,
-				E8A2C96123327814009F2E71 /* DVDRentalWatch WatchKit App */,
 				E8A2C97023327815009F2E71 /* DVDRentalWatch WatchKit Extension */,
 				E8A2C99B23327A9D009F2E71 /* MacRentals */,
+				E8A2C96123327814009F2E71 /* DVDRentalWatch WatchKit App */,
 				E8A2C93C23327130009F2E71 /* Products */,
 				E8A2C991233278D4009F2E71 /* Frameworks */,
 			);
@@ -367,6 +443,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "ZeeZide GmbH";
 				TargetAttributes = {
+					E839F2B3233284E4005BD5A2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					E8A2C93A23327130009F2E71 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -406,6 +485,7 @@
 				E8A2C95C23327814009F2E71 /* DVDRentalWatch WatchKit App */,
 				E8A2C96B23327815009F2E71 /* DVDRentalWatch WatchKit Extension */,
 				E8A2C99923327A9D009F2E71 /* MacRentals */,
+				E839F2B3233284E4005BD5A2 /* DVDRental-AllPlatforms */,
 			);
 		};
 /* End PBXProject section */
@@ -463,9 +543,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839F2B023328105005BD5A2 /* DatabaseConfig.swift in Sources */,
 				E8A2C93F23327130009F2E71 /* AppDelegate.swift in Sources */,
 				E8A2C94123327130009F2E71 /* SceneDelegate.swift in Sources */,
+				E839F2AD23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C94323327130009F2E71 /* ContentView.swift in Sources */,
+				E839F2AA23328105005BD5A2 /* RuleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +557,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A2C97423327815009F2E71 /* HostingController.swift in Sources */,
+				E839F2AB23328105005BD5A2 /* RuleModel.swift in Sources */,
+				E839F2B123328105005BD5A2 /* DatabaseConfig.swift in Sources */,
+				E839F2AE23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C97223327815009F2E71 /* ContentView.swift in Sources */,
 				E8A2C97823327815009F2E71 /* NotificationController.swift in Sources */,
 				E8A2C97623327815009F2E71 /* ExtensionDelegate.swift in Sources */,
@@ -485,7 +571,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839F2B223328105005BD5A2 /* DatabaseConfig.swift in Sources */,
 				E8A2C99F23327A9D009F2E71 /* ContentView.swift in Sources */,
+				E839F2AF23328105005BD5A2 /* CustomViews.swift in Sources */,
+				E839F2AC23328105005BD5A2 /* RuleModel.swift in Sources */,
 				E8A2C99D23327A9D009F2E71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +582,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E839F2B8233284EE005BD5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A2C93A23327130009F2E71 /* DVDRental */;
+			targetProxy = E839F2B7233284EE005BD5A2 /* PBXContainerItemProxy */;
+		};
+		E839F2BA233284EE005BD5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A2C95923327814009F2E71 /* DVDRentalWatch */;
+			targetProxy = E839F2B9233284EE005BD5A2 /* PBXContainerItemProxy */;
+		};
+		E839F2BC233284EE005BD5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A2C95C23327814009F2E71 /* DVDRentalWatch WatchKit App */;
+			targetProxy = E839F2BB233284EE005BD5A2 /* PBXContainerItemProxy */;
+		};
+		E839F2BE233284EE005BD5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A2C96B23327815009F2E71 /* DVDRentalWatch WatchKit Extension */;
+			targetProxy = E839F2BD233284EE005BD5A2 /* PBXContainerItemProxy */;
+		};
+		E839F2C0233284EE005BD5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A2C99923327A9D009F2E71 /* MacRentals */;
+			targetProxy = E839F2BF233284EE005BD5A2 /* PBXContainerItemProxy */;
+		};
 		E8A2C96023327814009F2E71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8A2C95C23327814009F2E71 /* DVDRentalWatch WatchKit App */;
@@ -549,6 +663,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E839F2B5233284E4005BD5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E839F2B6233284E4005BD5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E8A2C94D23327131009F2E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -678,7 +808,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.d2s.DVDRental;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -697,7 +827,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.d2s.DVDRental;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -854,6 +984,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E839F2B4233284E4005BD5A2 /* Build configuration list for PBXAggregateTarget "DVDRental-AllPlatforms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E839F2B5233284E4005BD5A2 /* Debug */,
+				E839F2B6233284E4005BD5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8A2C93623327130009F2E71 /* Build configuration list for PBXProject "DVDRental" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
