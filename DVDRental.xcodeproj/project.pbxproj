@@ -34,6 +34,9 @@
 		E839F2B023328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
 		E839F2B123328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
 		E839F2B223328105005BD5A2 /* DatabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2A923328105005BD5A2 /* DatabaseConfig.swift */; };
+		E839F2C223328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
+		E839F2C323328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
+		E839F2C423328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
 		E8A2C93F23327130009F2E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C93E23327130009F2E71 /* AppDelegate.swift */; };
 		E8A2C94123327130009F2E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94023327130009F2E71 /* SceneDelegate.swift */; };
 		E8A2C94323327130009F2E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94223327130009F2E71 /* ContentView.swift */; };
@@ -145,6 +148,7 @@
 		E839F2A723328105005BD5A2 /* RuleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleModel.swift; sourceTree = "<group>"; };
 		E839F2A823328105005BD5A2 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		E839F2A923328105005BD5A2 /* DatabaseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfig.swift; sourceTree = "<group>"; };
+		E839F2C123328703005BD5A2 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		E8A2C93B23327130009F2E71 /* DVDRental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDRental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A2C93E23327130009F2E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A2C94023327130009F2E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 				E839F2A723328105005BD5A2 /* RuleModel.swift */,
 				E839F2A823328105005BD5A2 /* CustomViews.swift */,
 				E839F2A923328105005BD5A2 /* DatabaseConfig.swift */,
+				E839F2C123328703005BD5A2 /* Formatters.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				E839F2AD23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C94323327130009F2E71 /* ContentView.swift in Sources */,
 				E839F2AA23328105005BD5A2 /* RuleModel.swift in Sources */,
+				E839F2C223328703005BD5A2 /* Formatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +565,7 @@
 				E8A2C97423327815009F2E71 /* HostingController.swift in Sources */,
 				E839F2AB23328105005BD5A2 /* RuleModel.swift in Sources */,
 				E839F2B123328105005BD5A2 /* DatabaseConfig.swift in Sources */,
+				E839F2C323328703005BD5A2 /* Formatters.swift in Sources */,
 				E839F2AE23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C97223327815009F2E71 /* ContentView.swift in Sources */,
 				E8A2C97823327815009F2E71 /* NotificationController.swift in Sources */,
@@ -571,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839F2C423328703005BD5A2 /* Formatters.swift in Sources */,
 				E839F2B223328105005BD5A2 /* DatabaseConfig.swift in Sources */,
 				E8A2C99F23327A9D009F2E71 /* ContentView.swift in Sources */,
 				E839F2AF23328105005BD5A2 /* CustomViews.swift in Sources */,
