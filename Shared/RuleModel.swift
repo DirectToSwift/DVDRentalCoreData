@@ -52,7 +52,7 @@ let ruleModel : RuleModel = [
   // MARK: - Custom Page View
   // An own `inspect` task page for `Customer` entities.
   // Check the CustomViews.swift for the implementation.
-  \.task == "inspect" && \.entity.name == "Customer"
+  \.platform == .phone && \.task == "inspect" && \.entity.name == "Customer"
     => \.page <= CustomerView(),
   
   
