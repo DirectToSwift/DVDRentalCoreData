@@ -56,7 +56,6 @@ struct EditRating: View, D2SAttributeValidator {
   @EnvironmentObject var object : OActiveRecord
   
   @Environment(\.displayNameForProperty) private var label
-  @Environment(\.propertyKey)            private var propertyKey
   @Environment(\.attribute)                      var attribute
   
   var body: some View {
