@@ -62,6 +62,7 @@ let ruleModel : RuleModel = [
   // In here, we use a currency formatter for things like `rentalRate` and
   // different duration formatters.
   \.propertyKey == "rentalRate" || \.propertyKey == "replacementCost"
+                                || \.propertyKey == "amount"
                                 => \.formatter <= currencyFormatter,
   \.propertyKey == "rentalDuration" && \.task != "edit"
                                 => \.formatter <= daysDurationFormatter,
