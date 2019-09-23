@@ -37,16 +37,12 @@
 		E839F2C223328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
 		E839F2C323328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
 		E839F2C423328703005BD5A2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839F2C123328703005BD5A2 /* Formatters.swift */; };
-		E839F2CA23352031005BD5A2 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E839F2C923352031005BD5A2 /* DirectToSwiftUI */; };
-		E839F2CF233536D6005BD5A2 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E839F2CE233536D6005BD5A2 /* DirectToSwiftUI */; };
-		E839F2D1233536DA005BD5A2 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E839F2D0233536DA005BD5A2 /* DirectToSwiftUI */; };
 		E8A2C93F23327130009F2E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C93E23327130009F2E71 /* AppDelegate.swift */; };
 		E8A2C94123327130009F2E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94023327130009F2E71 /* SceneDelegate.swift */; };
 		E8A2C94323327130009F2E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C94223327130009F2E71 /* ContentView.swift */; };
 		E8A2C94523327131009F2E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C94423327131009F2E71 /* Assets.xcassets */; };
 		E8A2C94823327131009F2E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C94723327131009F2E71 /* Preview Assets.xcassets */; };
 		E8A2C94B23327131009F2E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C94923327131009F2E71 /* LaunchScreen.storyboard */; };
-		E8A2C95723327350009F2E71 /* PostgreSQLAdaptor in Frameworks */ = {isa = PBXBuildFile; productRef = E8A2C95623327350009F2E71 /* PostgreSQLAdaptor */; };
 		E8A2C95E23327814009F2E71 /* DVDRentalWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8A2C95D23327814009F2E71 /* DVDRentalWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8A2C96423327814009F2E71 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C96223327814009F2E71 /* Interface.storyboard */; };
 		E8A2C96623327815009F2E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C96523327815009F2E71 /* Assets.xcassets */; };
@@ -58,13 +54,25 @@
 		E8A2C97A23327815009F2E71 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C97923327815009F2E71 /* NotificationView.swift */; };
 		E8A2C97C23327815009F2E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C97B23327815009F2E71 /* Assets.xcassets */; };
 		E8A2C97F23327815009F2E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C97E23327815009F2E71 /* Preview Assets.xcassets */; };
-		E8A2C995233278D5009F2E71 /* PostgreSQLAdaptor in Frameworks */ = {isa = PBXBuildFile; productRef = E8A2C994233278D5009F2E71 /* PostgreSQLAdaptor */; };
 		E8A2C99D23327A9D009F2E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C99C23327A9D009F2E71 /* AppDelegate.swift */; };
 		E8A2C99F23327A9D009F2E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2C99E23327A9D009F2E71 /* ContentView.swift */; };
 		E8A2C9A123327A9D009F2E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C9A023327A9D009F2E71 /* Assets.xcassets */; };
 		E8A2C9A423327A9D009F2E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C9A323327A9D009F2E71 /* Preview Assets.xcassets */; };
 		E8A2C9A723327A9D009F2E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A2C9A523327A9D009F2E71 /* Main.storyboard */; };
-		E8A2C9B423327AC3009F2E71 /* PostgreSQLAdaptor in Frameworks */ = {isa = PBXBuildFile; productRef = E8A2C9B323327AC3009F2E71 /* PostgreSQLAdaptor */; };
+		E8BB326D2339143300F4EE19 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E8BB326C2339143300F4EE19 /* DirectToSwiftUI */; };
+		E8BB32712339144800F4EE19 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB32702339144800F4EE19 /* CoreData.framework */; };
+		E8BB32752339145F00F4EE19 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E8BB32742339145F00F4EE19 /* DirectToSwiftUI */; };
+		E8BB32772339146500F4EE19 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB32762339146500F4EE19 /* CoreData.framework */; };
+		E8BB327B2339146E00F4EE19 /* DirectToSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E8BB327A2339146E00F4EE19 /* DirectToSwiftUI */; };
+		E8BB327D2339147400F4EE19 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB327C2339147400F4EE19 /* CoreData.framework */; };
+		E8BB3284233917A100F4EE19 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E8BB3280233917A100F4EE19 /* LICENSE */; };
+		E8BB3285233917A100F4EE19 /* SakilaCD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E8BB3281233917A100F4EE19 /* SakilaCD.sqlite */; };
+		E8BB3286233917A100F4EE19 /* Sakila.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E8BB3282233917A100F4EE19 /* Sakila.xcdatamodel */; };
+		E8BB3287233917A100F4EE19 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E8BB3283233917A100F4EE19 /* README.md */; };
+		E8BB3288233917C000F4EE19 /* Sakila.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E8BB3282233917A100F4EE19 /* Sakila.xcdatamodel */; };
+		E8BB3289233917C100F4EE19 /* Sakila.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E8BB3282233917A100F4EE19 /* Sakila.xcdatamodel */; };
+		E8BB328A233917C600F4EE19 /* SakilaCD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E8BB3281233917A100F4EE19 /* SakilaCD.sqlite */; };
+		E8BB328B233917C700F4EE19 /* SakilaCD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E8BB3281233917A100F4EE19 /* SakilaCD.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +188,13 @@
 		E8A2C9A623327A9D009F2E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8A2C9A823327A9D009F2E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A2C9A923327A9D009F2E71 /* MacRentals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacRentals.entitlements; sourceTree = "<group>"; };
+		E8BB32702339144800F4EE19 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E8BB32762339146500F4EE19 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		E8BB327C2339147400F4EE19 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		E8BB3280233917A100F4EE19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E8BB3281233917A100F4EE19 /* SakilaCD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SakilaCD.sqlite; sourceTree = "<group>"; };
+		E8BB3282233917A100F4EE19 /* Sakila.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sakila.xcdatamodel; sourceTree = "<group>"; };
+		E8BB3283233917A100F4EE19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839F2CA23352031005BD5A2 /* DirectToSwiftUI in Frameworks */,
-				E8A2C95723327350009F2E71 /* PostgreSQLAdaptor in Frameworks */,
+				E8BB32712339144800F4EE19 /* CoreData.framework in Frameworks */,
+				E8BB326D2339143300F4EE19 /* DirectToSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +211,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839F2CF233536D6005BD5A2 /* DirectToSwiftUI in Frameworks */,
-				E8A2C995233278D5009F2E71 /* PostgreSQLAdaptor in Frameworks */,
+				E8BB32772339146500F4EE19 /* CoreData.framework in Frameworks */,
+				E8BB32752339145F00F4EE19 /* DirectToSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +220,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839F2D1233536DA005BD5A2 /* DirectToSwiftUI in Frameworks */,
-				E8A2C9B423327AC3009F2E71 /* PostgreSQLAdaptor in Frameworks */,
+				E8BB327D2339147400F4EE19 /* CoreData.framework in Frameworks */,
+				E8BB327B2339146E00F4EE19 /* DirectToSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				E839F2A623328105005BD5A2 /* Shared */,
+				E8BB327F233917A100F4EE19 /* Sakila */,
 				E8A2C93D23327130009F2E71 /* DVDRental */,
 				E8A2C97023327815009F2E71 /* DVDRentalWatch WatchKit Extension */,
 				E8A2C99B23327A9D009F2E71 /* MacRentals */,
@@ -308,6 +324,9 @@
 		E8A2C991233278D4009F2E71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8BB327C2339147400F4EE19 /* CoreData.framework */,
+				E8BB32762339146500F4EE19 /* CoreData.framework */,
+				E8BB32702339144800F4EE19 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,6 +353,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E8BB327F233917A100F4EE19 /* Sakila */ = {
+			isa = PBXGroup;
+			children = (
+				E8BB3283233917A100F4EE19 /* README.md */,
+				E8BB3280233917A100F4EE19 /* LICENSE */,
+				E8BB3282233917A100F4EE19 /* Sakila.xcdatamodel */,
+				E8BB3281233917A100F4EE19 /* SakilaCD.sqlite */,
+			);
+			path = Sakila;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,11 +378,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				E8BB326F2339143B00F4EE19 /* PBXTargetDependency */,
 			);
 			name = DVDRental;
 			packageProductDependencies = (
-				E8A2C95623327350009F2E71 /* PostgreSQLAdaptor */,
-				E839F2C923352031005BD5A2 /* DirectToSwiftUI */,
+				E8BB326C2339143300F4EE19 /* DirectToSwiftUI */,
 			);
 			productName = DVDRental;
 			productReference = E8A2C93B23327130009F2E71 /* DVDRental.app */;
@@ -403,13 +433,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8A2C98E23327892009F2E71 /* PBXTargetDependency */,
-				E8A2C99023327892009F2E71 /* PBXTargetDependency */,
+				E8BB32732339145C00F4EE19 /* PBXTargetDependency */,
 			);
 			name = "DVDRentalWatch WatchKit Extension";
 			packageProductDependencies = (
-				E8A2C994233278D5009F2E71 /* PostgreSQLAdaptor */,
-				E839F2CE233536D6005BD5A2 /* DirectToSwiftUI */,
+				E8BB32742339145F00F4EE19 /* DirectToSwiftUI */,
 			);
 			productName = "DVDRentalWatch WatchKit Extension";
 			productReference = E8A2C96C23327815009F2E71 /* DVDRentalWatch WatchKit Extension.appex */;
@@ -426,13 +454,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8A2C9AE23327AB9009F2E71 /* PBXTargetDependency */,
-				E8A2C9B023327AB9009F2E71 /* PBXTargetDependency */,
+				E8BB32792339146A00F4EE19 /* PBXTargetDependency */,
 			);
 			name = MacRentals;
 			packageProductDependencies = (
-				E8A2C9B323327AC3009F2E71 /* PostgreSQLAdaptor */,
-				E839F2D0233536DA005BD5A2 /* DirectToSwiftUI */,
+				E8BB327A2339146E00F4EE19 /* DirectToSwiftUI */,
 			);
 			productName = MacRentals;
 			productReference = E8A2C99A23327A9D009F2E71 /* MacRentals.app */;
@@ -478,8 +504,7 @@
 			);
 			mainGroup = E8A2C93223327130009F2E71;
 			packageReferences = (
-				E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */,
-				E839F2C823352031005BD5A2 /* XCRemoteSwiftPackageReference "DirectToSwiftUI" */,
+				E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */,
 			);
 			productRefGroup = E8A2C93C23327130009F2E71 /* Products */;
 			projectDirPath = "";
@@ -500,8 +525,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB3287233917A100F4EE19 /* README.md in Resources */,
 				E8A2C94B23327131009F2E71 /* LaunchScreen.storyboard in Resources */,
 				E8A2C94823327131009F2E71 /* Preview Assets.xcassets in Resources */,
+				E8BB3285233917A100F4EE19 /* SakilaCD.sqlite in Resources */,
+				E8BB3284233917A100F4EE19 /* LICENSE in Resources */,
 				E8A2C94523327131009F2E71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB328B233917C700F4EE19 /* SakilaCD.sqlite in Resources */,
 				E8A2C97F23327815009F2E71 /* Preview Assets.xcassets in Resources */,
 				E8A2C97C23327815009F2E71 /* Assets.xcassets in Resources */,
 			);
@@ -538,6 +567,7 @@
 				E8A2C9A723327A9D009F2E71 /* Main.storyboard in Resources */,
 				E8A2C9A423327A9D009F2E71 /* Preview Assets.xcassets in Resources */,
 				E8A2C9A123327A9D009F2E71 /* Assets.xcassets in Resources */,
+				E8BB328A233917C600F4EE19 /* SakilaCD.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +581,7 @@
 				E839F2B023328105005BD5A2 /* DatabaseConfig.swift in Sources */,
 				E8A2C93F23327130009F2E71 /* AppDelegate.swift in Sources */,
 				E8A2C94123327130009F2E71 /* SceneDelegate.swift in Sources */,
+				E8BB3286233917A100F4EE19 /* Sakila.xcdatamodel in Sources */,
 				E839F2AD23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C94323327130009F2E71 /* ContentView.swift in Sources */,
 				E839F2AA23328105005BD5A2 /* RuleModel.swift in Sources */,
@@ -565,6 +596,7 @@
 				E8A2C97423327815009F2E71 /* HostingController.swift in Sources */,
 				E839F2AB23328105005BD5A2 /* RuleModel.swift in Sources */,
 				E839F2B123328105005BD5A2 /* DatabaseConfig.swift in Sources */,
+				E8BB3289233917C100F4EE19 /* Sakila.xcdatamodel in Sources */,
 				E839F2C323328703005BD5A2 /* Formatters.swift in Sources */,
 				E839F2AE23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E8A2C97223327815009F2E71 /* ContentView.swift in Sources */,
@@ -581,6 +613,7 @@
 				E839F2C423328703005BD5A2 /* Formatters.swift in Sources */,
 				E839F2B223328105005BD5A2 /* DatabaseConfig.swift in Sources */,
 				E8A2C99F23327A9D009F2E71 /* ContentView.swift in Sources */,
+				E8BB3288233917C000F4EE19 /* Sakila.xcdatamodel in Sources */,
 				E839F2AF23328105005BD5A2 /* CustomViews.swift in Sources */,
 				E839F2AC23328105005BD5A2 /* RuleModel.swift in Sources */,
 				E8A2C99D23327A9D009F2E71 /* AppDelegate.swift in Sources */,
@@ -625,21 +658,17 @@
 			target = E8A2C96B23327815009F2E71 /* DVDRentalWatch WatchKit Extension */;
 			targetProxy = E8A2C96E23327815009F2E71 /* PBXContainerItemProxy */;
 		};
-		E8A2C98E23327892009F2E71 /* PBXTargetDependency */ = {
+		E8BB326F2339143B00F4EE19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = E8A2C98D23327892009F2E71 /* DirectToSwiftUI */;
+			productRef = E8BB326E2339143B00F4EE19 /* DirectToSwiftUI */;
 		};
-		E8A2C99023327892009F2E71 /* PBXTargetDependency */ = {
+		E8BB32732339145C00F4EE19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = E8A2C98F23327892009F2E71 /* PostgreSQLAdaptor */;
+			productRef = E8BB32722339145C00F4EE19 /* DirectToSwiftUI */;
 		};
-		E8A2C9AE23327AB9009F2E71 /* PBXTargetDependency */ = {
+		E8BB32792339146A00F4EE19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = E8A2C9AD23327AB9009F2E71 /* DirectToSwiftUI */;
-		};
-		E8A2C9B023327AB9009F2E71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = E8A2C9AF23327AB9009F2E71 /* PostgreSQLAdaptor */;
+			productRef = E8BB32782339146A00F4EE19 /* DirectToSwiftUI */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1058,72 +1087,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E839F2C823352031005BD5A2 /* XCRemoteSwiftPackageReference "DirectToSwiftUI" */ = {
+		E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/DirectToSwift/DirectToSwiftUI.git";
+			repositoryURL = "git@github.com:DirectToSwift/CoreDataToSwiftUI.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
-		E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ZeeQL/ZeeQL3PCK.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.10;
+				branch = develop;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E839F2C923352031005BD5A2 /* DirectToSwiftUI */ = {
+		E8BB326C2339143300F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E839F2C823352031005BD5A2 /* XCRemoteSwiftPackageReference "DirectToSwiftUI" */;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
 			productName = DirectToSwiftUI;
 		};
-		E839F2CE233536D6005BD5A2 /* DirectToSwiftUI */ = {
+		E8BB326E2339143B00F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E839F2C823352031005BD5A2 /* XCRemoteSwiftPackageReference "DirectToSwiftUI" */;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
 			productName = DirectToSwiftUI;
 		};
-		E839F2D0233536DA005BD5A2 /* DirectToSwiftUI */ = {
+		E8BB32722339145C00F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E839F2C823352031005BD5A2 /* XCRemoteSwiftPackageReference "DirectToSwiftUI" */;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
 			productName = DirectToSwiftUI;
 		};
-		E8A2C95623327350009F2E71 /* PostgreSQLAdaptor */ = {
+		E8BB32742339145F00F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */;
-			productName = PostgreSQLAdaptor;
-		};
-		E8A2C98D23327892009F2E71 /* DirectToSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
 			productName = DirectToSwiftUI;
 		};
-		E8A2C98F23327892009F2E71 /* PostgreSQLAdaptor */ = {
+		E8BB32782339146A00F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */;
-			productName = PostgreSQLAdaptor;
-		};
-		E8A2C994233278D5009F2E71 /* PostgreSQLAdaptor */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */;
-			productName = PostgreSQLAdaptor;
-		};
-		E8A2C9AD23327AB9009F2E71 /* DirectToSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
 			productName = DirectToSwiftUI;
 		};
-		E8A2C9AF23327AB9009F2E71 /* PostgreSQLAdaptor */ = {
+		E8BB327A2339146E00F4EE19 /* DirectToSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */;
-			productName = PostgreSQLAdaptor;
-		};
-		E8A2C9B323327AC3009F2E71 /* PostgreSQLAdaptor */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E8A2C95523327350009F2E71 /* XCRemoteSwiftPackageReference "ZeeQL3PCK" */;
-			productName = PostgreSQLAdaptor;
+			package = E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */;
+			productName = DirectToSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

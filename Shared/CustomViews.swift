@@ -19,12 +19,14 @@ struct CustomerView: View {
   
   @Environment(\.object) var object
   
+  var typedObject: Customer? { return object as? Customer }
+  
   var body: some View {
     VStack {
       HStack {
         D2SDisplayString()
           .environment(\.propertyKey, "firstName")
-        Text(verbatim: "\(object.lastName ?? "-")")
+        Text(verbatim: "\(typedObject?.lastName ?? "-")")
         Spacer()
       }
       .font(.title)
@@ -53,22 +55,24 @@ private let ratings   = [ nilRating, "G", "PG", "PG-13", "R", "NC-17" ]
  */
 struct EditRating: View, D2SAttributeValidator {
   
-  @EnvironmentObject var object : OActiveRecord
+  @EnvironmentObject var object : NSManagedObject
   
   @Environment(\.displayNameForProperty) private var label
   @Environment(\.attribute)                      var attribute
-  
+
+  var film: Film { return object as! Film }
+
   var body: some View {
     HStack(spacing: 16) {
       Text(label).foregroundColor(isValid ? nil : .red)
       Spacer()
       ForEach(ratings, id: \.self) { ( rating: String ) in
         Group { // Button didn't work in here
-          if self.object.rating as? String == rating {
+          if self.film.rating == rating {
             Text(rating)
               .foregroundColor(.black)
           }
-          else if self.object.rating == nil && rating == nilRating {
+          else if self.film.rating == nil && rating == nilRating {
             Text(rating)
               .foregroundColor(.black)
           }
@@ -78,7 +82,7 @@ struct EditRating: View, D2SAttributeValidator {
           }
         }
         .onTapGesture { () -> Void in
-          self.object.rating = rating == nilRating ? nil : rating
+          self.film.rating = rating == nilRating ? nil : rating
         }
       }
     }

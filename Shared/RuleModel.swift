@@ -11,14 +11,17 @@ let ruleModel : RuleModel = [
   // Uncomment to enable the login panel.
   // Password: https://www.youtube.com/watch?v=a6iW-8xPw3k
   // \.firstTask <= "login",
+  /* FIXME: needs DML
   \.user?.username == "Mike" => \.visibleEntityNames <= [ "Actor", "Film" ],
   \.user?.username == "Mike" && \.object.firstName == "Penelope"
                              => \.isObjectEditable <= false,
+  */
   
   // just to avoid the not-null issue (note: Date is fixed here!)
+  /* FIXME: needs DML
   \.entity.name == "Film"
         => \.initialPropertyValues <= [ "fulltext": "", "lastUpdate": Date() ],
-  
+   */
   
   // MARK: - Different Row Component
   // Just show the title of the Language object, instead of the summary.
@@ -106,9 +109,11 @@ let ruleModel : RuleModel = [
   
   // MARK: - Misc Customizations
   // We customize the "Rental" entity a little more.
+  /* FIXME: needs DML
   \.task == "list" && \.entity.name == "Rental"
      && \.object.d2s.isDefault == false
           => \.title <= \.object.rentalDate.string,
+   */
   \.task == "list" && \.entity.name == "Rental"
           => \.displayPropertyKeys <= [ "inventory.film.title", "returnDate" ],
   \.propertyKey == "inventory.film.title"
