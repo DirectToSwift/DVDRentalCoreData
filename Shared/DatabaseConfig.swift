@@ -15,7 +15,7 @@ fileprivate let storeCoordinator : NSPersistentStoreCoordinator = {
   let fm = FileManager.default
   
   guard let templateDB =
-              Bundle.main.path(forResource: "Sakila", ofType: "sqlite") else {
+              Bundle.main.path(forResource: "SakilaCD", ofType: "sqlite") else {
     print("Could not locate Sakila database!")
     fatalError("Could not locate template DB!")
   }
