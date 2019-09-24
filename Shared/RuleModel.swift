@@ -2,6 +2,7 @@
 
 import DirectToSwiftUI
 
+
 let ruleModel : RuleModel = [
   // MARK: - Debug Mode
   // Enable this rule to show extra debug views in the UI.
@@ -113,6 +114,20 @@ let ruleModel : RuleModel = [
   \.propertyKey == "inventory.film.title"
           => \.displayNameForProperty <= "Film",
   \.propertyKey == "inventory.film.title" && \.task == "list"
+          => \.displayNameForProperty <= "",
+  
+  // We customize the "Inventory" entity a little more.
+
+  /* doesn't quite work yet:
+  \.task == "list" && \.entity.name == "Inventory"
+     && \.object.d2s.isDefault == false
+          => \.title <= \.object.p.film?.title.string,
+   */
+  \.task == "list" && \.entity.name == "Inventory"
+          => \.displayPropertyKeys <= [ "film.title", "store.address.address" ],
+  \.propertyKey == "film.title"
+          => \.displayNameForProperty <= "Film",
+  \.propertyKey == "store.address.address" && \.task == "list"
           => \.displayNameForProperty <= "",
 
   

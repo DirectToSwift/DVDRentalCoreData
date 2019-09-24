@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import class DirectToSwiftUI.D2STransformingFormatter
+import class  DirectToSwiftUI.D2STransformingFormatter
+import struct DirectToSwiftUI.KVCTrampoline
 
 /// Format numbers as currency, e.g. $0.99 for the rental rate.
 let currencyFormatter : NumberFormatter = {
@@ -52,6 +53,15 @@ extension Optional where Wrapped == Any {
       return dateFormatter.string(from: date)
     }
     return String(describing: value)
+  }
+}
+extension Optional where Wrapped == KVCTrampoline {
+  var string : String { // hack :-)
+    guard case .some(let value) = self else { return "-" }
+    if let date = value.object as? Date {
+      return dateFormatter.string(from: date)
+    }
+    return String(describing: value.object)
   }
 }
 
