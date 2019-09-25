@@ -30,7 +30,6 @@ The sample contains targets to build iOS, watchOS and macOS applications.
 <img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png?v=2">
 <img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png?v=2">
 <img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png?v=2">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png?v=2">
 </p>
 
 ### Phone
@@ -42,7 +41,7 @@ The sample contains targets to build iOS, watchOS and macOS applications.
 
 ### macOS
 
-To ugly yet to show, but works in a very restricted way ;-) 
+Still too ugly to show, but works in a very restricted way ;-) 
 
 
 ## ER Diagram
