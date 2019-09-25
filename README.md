@@ -25,17 +25,17 @@ The sample contains targets to build iOS, watchOS and macOS applications.
 
 ### Watch
 
-<p float="left" align="top">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/01-homepage.png">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png">
-<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png">
+<p float="left" valign="top">
+<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/01-homepage.png?v=2">
+<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png?v=2">
+<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png?v=2">
+<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png?v=2">
+<img width="200" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png?v=2">
 </p>
 
 ### Phone
 
-<p float="left" align="top">
+<p float="left" valign="top">
 <img width="320" src="http://www.alwaysrightinstitute.com/images/d2s/limited-entities.png">
 <img width="320" src="http://www.alwaysrightinstitute.com/images/d2s/list-customer-default.png">
 </p>
