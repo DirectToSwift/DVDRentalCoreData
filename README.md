@@ -25,17 +25,20 @@ The sample contains targets to build iOS, watchOS and macOS applications.
 
 ### Watch
 
-<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/01-homepage.png">
-<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png">
-<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png">
-<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png">
-<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png">
-
+<p float="left">
+<img width="160" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/01-homepage.png">
+<img width="160" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png">
+<img width="160" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png">
+<img width="160" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png">
+<img width="160" src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png">
+</p>
 
 ### Phone
 
-<img src="http://www.alwaysrightinstitute.com/images/d2s/limited-entities.png">
-<img src="http://www.alwaysrightinstitute.com/images/d2s/list-customer-default.png">
+<p float="left">
+<img width="320" src="http://www.alwaysrightinstitute.com/images/d2s/limited-entities.png">
+<img width="320" src="http://www.alwaysrightinstitute.com/images/d2s/list-customer-default.png">
+</p>
 
 ### macOS
 
