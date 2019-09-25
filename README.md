@@ -37,6 +37,12 @@ aka "DVDRental".
 
 The sample contains targets to build iOS, watchOS and macOS applications.
 
+There is a version of this using 
+[ZeeQL](http://zeeql.io) to connect to SQL databases,
+instead of
+[CoreData](https://developer.apple.com/documentation/coredata):
+[DVDRental](https://github.com/DirectToSwift/DVDRental).
+
 
 ## What it looks like
 
