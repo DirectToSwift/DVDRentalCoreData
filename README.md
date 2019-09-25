@@ -25,17 +25,17 @@ The sample contains targets to build iOS, watchOS and macOS applications.
 
 ### Watch
 
-<center><video controls>
-  <source src="https://zeezide.com/img/d2s/WatchCustomerDefaultRules.mov" 
-          type="video/quicktime" />
-</video></center>
+<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/01-homepage.png">
+<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/02-customers.png">
+<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/03-customer.png">
+<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/04-movies.png">
+<img src="http://www.alwaysrightinstitute.com/images/d2s/watchos-screenshots/05-movie.png">
+
 
 ### Phone
 
-<center><video width="320" controls>
-  <source src="https://zeezide.com/img/d2s/CustomerDefaultRules.mov" 
-          type="video/quicktime" />
-</video></center>
+<img src="http://www.alwaysrightinstitute.com/images/d2s/limited-entities.png">
+<img src="http://www.alwaysrightinstitute.com/images/d2s/list-customer-default.png">
 
 ### macOS
 
