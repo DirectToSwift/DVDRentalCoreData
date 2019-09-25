@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Actor" representedClassName="Actor" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="lastName" attributeType="String"/>
+        <attribute name="lastUpdate" attributeType="Date" defaultDateTimeInterval="590755320" usesScalarValueType="NO"/>
+        <relationship name="filmActors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmActor" inverseName="actor" inverseEntity="FilmActor"/>
+    </entity>
+    <entity name="Address" representedClassName="Address" syncable="YES" codeGenerationType="class">
+        <attribute name="address" attributeType="String" maxValueString="50"/>
+        <attribute name="address2" optional="YES" attributeType="String" maxValueString="50"/>
+        <attribute name="district" attributeType="String" maxValueString="20"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="phone" attributeType="String" maxValueString="20"/>
+        <attribute name="postalCode" optional="YES" attributeType="String" maxValueString="10"/>
+        <relationship name="city" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="addresses" inverseEntity="City"/>
+        <relationship name="customers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Customer" inverseName="address" inverseEntity="Customer"/>
+        <relationship name="staff" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Staff" inverseName="address" inverseEntity="Staff"/>
+        <relationship name="stores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Store" inverseName="address" inverseEntity="Store"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" maxValueString="25"/>
+        <relationship name="filmCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmCategory" inverseName="category" inverseEntity="FilmCategory"/>
+    </entity>
+    <entity name="City" representedClassName="City" syncable="YES" codeGenerationType="class">
+        <attribute name="city" attributeType="String" maxValueString="50"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Address" inverseName="city" inverseEntity="Address"/>
+        <relationship name="country" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="cities" inverseEntity="Country"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="country" attributeType="String" maxValueString="50"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="City" inverseName="country" inverseEntity="City"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="createDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String" maxValueString="50"/>
+        <attribute name="firstName" attributeType="String" maxValueString="45"/>
+        <attribute name="lastName" attributeType="String" maxValueString="45"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="address" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="customers" inverseEntity="Address"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="customer" inverseEntity="Payment"/>
+        <relationship name="rentals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rental" inverseName="customer" inverseEntity="Rental"/>
+        <relationship name="store" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="customers" inverseEntity="Store"/>
+    </entity>
+    <entity name="Film" representedClassName="Film" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="length" optional="YES" attributeType="Integer 32" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="unit" value="minutes"/>
+            </userInfo>
+        </attribute>
+        <attribute name="rating" optional="YES" attributeType="String" maxValueString="10"/>
+        <attribute name="releaseYear" optional="YES" attributeType="String" maxValueString="4"/>
+        <attribute name="rentalDuration" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rentalRate" attributeType="Decimal"/>
+        <attribute name="replacementCost" attributeType="Decimal"/>
+        <attribute name="specialFeatures" optional="YES" attributeType="String" maxValueString="100"/>
+        <attribute name="summary" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="originalName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" attributeType="String" maxValueString="255"/>
+        <relationship name="filmActors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmActor" inverseName="film" inverseEntity="FilmActor"/>
+        <relationship name="filmCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmCategory" inverseName="film" inverseEntity="FilmCategory"/>
+        <relationship name="inventories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Inventory" inverseName="film" inverseEntity="Inventory"/>
+        <relationship name="language" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="films" inverseEntity="Language"/>
+        <relationship name="originalLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="originalFilms" inverseEntity="Language"/>
+        <userInfo>
+            <entry key="unit" value="days"/>
+        </userInfo>
+    </entity>
+    <entity name="FilmActor" representedClassName="FilmActor" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actor" maxCount="1" deletionRule="Nullify" destinationEntity="Actor" inverseName="filmActors" inverseEntity="Actor"/>
+        <relationship name="film" maxCount="1" deletionRule="Nullify" destinationEntity="Film" inverseName="filmActors" inverseEntity="Film"/>
+    </entity>
+    <entity name="FilmCategory" representedClassName="FilmCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="filmCategories" inverseEntity="Category"/>
+        <relationship name="film" maxCount="1" deletionRule="Nullify" destinationEntity="Film" inverseName="filmCategories" inverseEntity="Film"/>
+    </entity>
+    <entity name="Inventory" representedClassName="Inventory" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="film" maxCount="1" deletionRule="Nullify" destinationEntity="Film" inverseName="inventories" inverseEntity="Film"/>
+        <relationship name="rentals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rental" inverseName="inventory" inverseEntity="Rental"/>
+        <relationship name="store" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="inventory" inverseEntity="Store"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" maxValueString="20"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Film" inverseName="language" inverseEntity="Film"/>
+        <relationship name="originalFilms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Film" inverseName="originalLanguage" inverseEntity="Film"/>
+    </entity>
+    <entity name="Payment" representedClassName="Payment" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="Decimal"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="paymentDate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="customer" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="payments" inverseEntity="Customer"/>
+        <relationship name="rental" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rental" inverseName="payments" inverseEntity="Rental"/>
+        <relationship name="staff" maxCount="1" deletionRule="Nullify" destinationEntity="Staff" inverseName="payments" inverseEntity="Staff"/>
+    </entity>
+    <entity name="Rental" representedClassName="Rental" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="rentalDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="returnDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="customer" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="rentals" inverseEntity="Customer"/>
+        <relationship name="inventory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Inventory" inverseName="rentals" inverseEntity="Inventory"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="rental" inverseEntity="Payment"/>
+        <relationship name="staff" maxCount="1" deletionRule="Nullify" destinationEntity="Staff" inverseName="rentals" inverseEntity="Staff"/>
+    </entity>
+    <entity name="Staff" representedClassName="Staff" syncable="YES" codeGenerationType="class">
+        <attribute name="active" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" maxValueString="50"/>
+        <attribute name="firstName" attributeType="String" maxValueString="45"/>
+        <attribute name="lastName" attributeType="String" maxValueString="45"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String" maxValueString="40">
+            <userInfo>
+                <entry key="algorithm" value="sha1"/>
+            </userInfo>
+        </attribute>
+        <attribute name="picture" optional="YES" attributeType="Binary"/>
+        <attribute name="username" optional="YES" attributeType="String" maxValueString="16"/>
+        <relationship name="address" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="staff" inverseEntity="Address"/>
+        <relationship name="managedStores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Store" inverseName="manager" inverseEntity="Store"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="staff" inverseEntity="Payment"/>
+        <relationship name="rentals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rental" inverseName="staff" inverseEntity="Rental"/>
+        <relationship name="store" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="staff" inverseEntity="Store"/>
+    </entity>
+    <entity name="Store" representedClassName="Store" syncable="YES" codeGenerationType="class">
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="address" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="stores" inverseEntity="Address"/>
+        <relationship name="customers" toMany="YES" deletionRule="Nullify" destinationEntity="Customer" inverseName="store" inverseEntity="Customer"/>
+        <relationship name="inventory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Inventory" inverseName="store" inverseEntity="Inventory"/>
+        <relationship name="manager" maxCount="1" deletionRule="Nullify" destinationEntity="Staff" inverseName="managedStores" inverseEntity="Staff"/>
+        <relationship name="staff" toMany="YES" deletionRule="Nullify" destinationEntity="Staff" inverseName="store" inverseEntity="Staff"/>
+    </entity>
+    <elements>
+        <element name="Actor" positionX="18" positionY="63" width="128" height="103"/>
+        <element name="Address" positionX="36" positionY="81" width="128" height="193"/>
+        <element name="Category" positionX="18" positionY="63" width="128" height="88"/>
+        <element name="City" positionX="45" positionY="90" width="128" height="103"/>
+        <element name="Country" positionX="-9" positionY="36" width="128" height="88"/>
+        <element name="Customer" positionX="0" positionY="45" width="128" height="193"/>
+        <element name="Film" positionX="36" positionY="81" width="128" height="268"/>
+        <element name="FilmActor" positionX="9" positionY="54" width="128" height="88"/>
+        <element name="FilmCategory" positionX="27" positionY="72" width="128" height="88"/>
+        <element name="Inventory" positionX="0" positionY="45" width="128" height="103"/>
+        <element name="Language" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Payment" positionX="-36" positionY="9" width="128" height="133"/>
+        <element name="Rental" positionX="-18" positionY="27" width="128" height="148"/>
+        <element name="Staff" positionX="-54" positionY="-9" width="128" height="238"/>
+        <element name="Store" positionX="-9" positionY="36" width="128" height="133"/>
+    </elements>
+</model>

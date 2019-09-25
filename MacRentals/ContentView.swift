@@ -11,8 +11,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        D2SMainView(adaptor   : adaptor,
-                    ruleModel : ruleModel)
+        D2SMainView(managedObjectContext : managedObjectContext,
+                    ruleModel            : ruleModel)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
