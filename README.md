@@ -21,6 +21,27 @@ aka "DVDRental", as a CoreData database.
 The sample contains targets to build iOS, watchOS and macOS applications.
 
 
+## What it looks like
+
+### Watch
+
+<center><video controls>
+  <source src="https://zeezide.com/img/d2s/WatchCustomerDefaultRules.mov" 
+          type="video/quicktime" />
+</video></center>
+
+### Phone
+
+<center><video width="320" controls>
+  <source src="https://zeezide.com/img/d2s/CustomerDefaultRules.mov" 
+          type="video/quicktime" />
+</video></center>
+
+### macOS
+
+To ugly yet to show, but works in a very restricted way ;-) 
+
+
 ## ER Diagram
 
 <img src="https://www.jooq.org/img/sakila.png">
