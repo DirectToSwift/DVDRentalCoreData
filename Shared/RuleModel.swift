@@ -10,7 +10,7 @@ import DirectToSwiftUI
  * We also cast the (login) _user_ path.
  */
 extension DynamicEnvironmentPathes {
-  var staffUser : Staff? { set { user   = newValue! } get { user   as? Staff } }
+  var staffUser : Staff? { set { user   = newValue  } get { user   as? Staff } }
   var staff     : Staff? { set { object = newValue! } get { object as? Staff } }
   var film      : Film?  { set { object = newValue! } get { object as? Film  } }
   var customer  : Customer? { set { object = newValue!  }
@@ -26,10 +26,15 @@ let ruleModel : RuleModel = [
   // Uncomment to enable the login panel.
   // Password: https://www.youtube.com/watch?v=a6iW-8xPw3k
   // \.firstTask <= "login",
+  /* https://bugs.swift.org/browse/SR-11527
   \.staffUser?.username == "Mike" => \.visibleEntityNames <= [ "Actor", "Film" ],
   \.staffUser?.username == "Mike" && \.customer?.firstName == "Penelope"
-                             => \.isObjectEditable <= false,
-  
+                                  => \.isObjectEditable <= false,
+   */
+  \.user?.p.username == "Mike" => \.visibleEntityNames <= [ "Actor", "Film" ],
+  \.user?.p.username == "Mike" && \.object.p.firstName == "Penelope"
+                               => \.isObjectEditable <= false,
+
   // just to avoid the not-null issue (note: Date is fixed here!)
   \.entity.name == "Film"
         => \.initialPropertyValues <= [ "fulltext": "", "lastUpdate": Date() ],
