@@ -1089,10 +1089,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		E8BB326B2339143300F4EE19 /* XCRemoteSwiftPackageReference "CoreDataToSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:DirectToSwift/CoreDataToSwiftUI.git";
+			repositoryURL = "https://github.com/DirectToSwift/CoreDataToSwiftUI.git";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
